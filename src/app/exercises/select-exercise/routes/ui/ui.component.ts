@@ -17,8 +17,4 @@ export class UiComponent {
     { value: 'banana', text: 'Banana' },
     { value: 'cherry', text: 'Cherry' },
   ];
-
-  onOptionSelected(option: Option): void {
-    console.log('Selected option:', option);
-  }
 }

@@ -13,8 +13,6 @@ import { ButtonComponent } from '../../../button-exercise/components/button/butt
   imports: [SelectComponent, ButtonComponent],
 })
 export class DemoComponent {
-  // This component can be used to demonstrate various UI elements
-  // Add any necessary logic or properties here as needed
   years: Option[] = [
     { value: '2020', text: '2020' },
     { value: '2021', text: '2021' },
@@ -32,8 +30,4 @@ export class DemoComponent {
     { value: 'civic', text: 'Civic' },
     { value: 'mustang', text: 'Mustang' },
   ];
-
-  onOptionSelected(option: Option): void {
-    console.log('Selected option:', option);
-  }
 }

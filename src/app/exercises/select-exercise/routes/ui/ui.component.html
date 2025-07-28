@@ -1,18 +1,5 @@
 <div class="ui-container">
-  <app-select
-    label="first"
-    [options]="options"
-    (selectedOption)="onOptionSelected($event)"
-  />
-  <app-select
-    label="second"
-    [options]="options"
-    (selectedOption)="onOptionSelected($event)"
-  />
-  <app-select
-    label="third"
-    id="third"
-    [options]="options"
-    (selectedOption)="onOptionSelected($event)"
-  />
+  <app-select label="First" [options]="options" />
+  <app-select label="Second" [options]="options" />
+  <app-select label="Third" id="third" [options]="options" />
 </div>
