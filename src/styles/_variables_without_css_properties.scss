@@ -1,0 +1,41 @@
+// Base Colors
+$color-primary: #1e90ff;
+$color-primary-hover: #1c86ee;
+$color-primary-active: #1874cd;
+
+$color-secondary: #6c757d;
+$color-secondary-hover: #5a6268;
+$color-secondary-active: #545b62;
+
+$color-outline: #2c2c2c;
+$color-outline-hover: #1e1e1e;
+$color-outline-active: #1a1a1a;
+
+$color-white: #ffffff;
+$color-dark: #121212;
+
+$color-focus-ring: #ffd700;
+
+// Button Text
+$color-button-text: $color-white;
+$color-outline-text: #d3d3d3;
+
+// Select
+$color-select-background: $color-outline;
+$color-select-hover: #3a3a3a;
+$color-select-active: #3f3f3f;
+$color-select-border-focus: $color-focus-ring;
+$color-select-arrow: #aaa;
+
+// Checkbox
+$color-checkbox-border: $color-outline;
+$color-checkbox-hover: $color-primary;
+$color-checkbox-active-bg: $color-primary;
+$color-checkbox-check: $color-white;
+
+// Modal
+$color-modal-bg: #1e1e1e;
+$color-modal-header: $color-primary;
+$color-modal-text: $color-white;
+$color-modal-border: $color-outline;
+$color-modal-shadow: rgba(0, 0, 0, 0.5);

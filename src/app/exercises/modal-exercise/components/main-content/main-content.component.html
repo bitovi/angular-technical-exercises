@@ -1,0 +1,36 @@
+<div class="horizontal-scroll">
+  <div class="content">
+    <div class="section section-1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        deleniti natus dolorem id, quibusdam, et necessitatibus in, quo odit ea
+        amet aliquid inventore aspernatur doloremque cumque eius quod eveniet?
+        Atque.
+      </p>
+
+      <button #button app-button (click)="openModal()">Open Modal</button>
+      @if (open) {
+        <app-modal
+          (closeRequested)="closeModal()"
+          [anchor]="buttonRef.nativeElement"
+        />
+      }
+    </div>
+    <div class="section section-2">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        deleniti natus dolorem id, quibusdam, et necessitatibus in, quo odit ea
+        amet aliquid inventore aspernatur doloremque cumque eius quod eveniet?
+        Atque.
+      </p>
+    </div>
+    <div class="section section-3">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        deleniti natus dolorem id, quibusdam, et necessitatibus in, quo odit ea
+        amet aliquid inventore aspernatur doloremque cumque eius quod eveniet?
+        Atque.
+      </p>
+    </div>
+  </div>
+</div>

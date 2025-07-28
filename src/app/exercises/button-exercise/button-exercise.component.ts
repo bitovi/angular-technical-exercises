@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { PageSwitcherComponent } from '../../components/page-switcher/page-switcher.component';
+
+@Component({
+  selector: 'app-button-exercise',
+  templateUrl: './button-exercise.component.html',
+  styleUrl: './button-exercise.component.scss',
+  standalone: true,
+  imports: [RouterOutlet, PageSwitcherComponent],
+})
+export class ButtonExerciseComponent {}

@@ -1,0 +1,58 @@
+@use "variables" as *;
+
+// Do not change this value, it must be the max possible value.
+$maxZIndex: 2147483647;
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+:host {
+  display: block;
+  position: relative;
+}
+
+svg {
+  width: 16px;
+  height: 16px;
+}
+
+.modal {
+  position: absolute;
+  top: 20px + 4px;
+  left: 0;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // z-index must be the max possible value (for some reason)
+  z-index: $maxZIndex;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+
+  .header {
+    font-size: 22px;
+  }
+
+  button {
+    margin-top: 16px;
+    margin-left: auto;
+  }
+}
+
+.info-tooltip-button {
+  // todo
+  @include button-reset;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: underline;
+  color: $color-primary;
+}

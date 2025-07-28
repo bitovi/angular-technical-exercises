@@ -1,0 +1,26 @@
+.horizontal-scroll {
+  overflow: auto;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.content {
+  display: flex;
+}
+
+.section {
+  width: 260px;
+  min-width: 260px;
+  height: 240px;
+  padding: 8px;
+}
+
+.section-1 {
+  background: lightcoral;
+}
+.section-2 {
+  background: lightcyan;
+}
+.section-3 {
+  background: lightgreen;
+}

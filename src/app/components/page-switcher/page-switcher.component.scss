@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: $color-secondary;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+
+  &:hover {
+    color: $color-primary-hover;
+  }
+  &:active {
+    color: $color-primary-active;
+  }
+}
+
+nav a.active {
+  border-color: $color-primary;
+  font-weight: bold;
+  color: $color-secondary-active;
+}

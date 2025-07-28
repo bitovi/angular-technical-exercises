@@ -1,1 +1,39 @@
+@use "tokens" as *;
+@use "variables" as *;
+
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  @include tokens;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: $color-dark;
+  background-color: $color-white;
+}
+
+svg {
+  pointer-events: none;
+}
+
+img {
+  display: block;
+}
+
+.ui-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 24px;
+  border: 2px solid $color-secondary-active;
+  border-radius: 8px;
+}

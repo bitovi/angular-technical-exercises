@@ -1,0 +1,42 @@
+@use "variables" as *;
+
+$color-button-text: $color-white;
+$color-outline-text: $color-secondary;
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: $color-button-text;
+  max-height: 27px;
+}
+:host:focus-visible {
+  outline: 2px solid $color-focus-ring;
+  outline-offset: 2px;
+}
+
+:host.primary {
+  background-color: $color-primary;
+}
+:host.primary:hover:not(:disabled),
+:host.primary:focus:not(:disabled),
+:host.primary:focus-visible:not(:disabled) {
+  background-color: $color-primary-hover;
+}
+:host.primary:active:not(:disabled) {
+  background-color: $color-primary-active;
+}
+
+:host:disabled {
+  background-color: $background-color-disabled;
+  color: $color-disabled;
+  cursor: not-allowed;
+  border: none;
+}

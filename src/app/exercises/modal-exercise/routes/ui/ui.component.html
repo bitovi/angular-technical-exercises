@@ -1,0 +1,8 @@
+@if (open) {
+  <app-modal
+    (closeRequested)="toggleModal()"
+    [anchor]="buttonRef.nativeElement"
+  />
+}
+
+<button #button app-button (click)="toggleModal()">Toggle Modal</button>

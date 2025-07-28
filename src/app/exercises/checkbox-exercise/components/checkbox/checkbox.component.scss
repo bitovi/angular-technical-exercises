@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+:host {
+  display: block;
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: $gap;
+}
+
+:host.disabled {
+  color: $color-disabled;
+  cursor: not-allowed;
+}

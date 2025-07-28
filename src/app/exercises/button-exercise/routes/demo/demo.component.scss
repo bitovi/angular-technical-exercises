@@ -1,0 +1,23 @@
+@use "variables" as *;
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+
+  .warning {
+    color: red;
+    font-style: italic;
+  }
+}
+
+.notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0096a6;
+  color: $color-white;
+  padding: 6px 12px;
+  gap: 4px;
+}
