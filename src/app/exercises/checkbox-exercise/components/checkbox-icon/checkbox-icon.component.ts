@@ -7,7 +7,4 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
 })
-export class CheckboxIconComponent {
-  // This component can be used to display an icon within a checkbox
-  // Add any necessary logic or properties here as needed
-}
+export class CheckboxIconComponent {}
