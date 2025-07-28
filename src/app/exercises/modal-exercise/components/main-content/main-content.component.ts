@@ -33,8 +33,4 @@ export class MainContentComponent {
       }),
     ]);
   }
-
-  closeModal() {
-    this.open = false;
-  }
 }
