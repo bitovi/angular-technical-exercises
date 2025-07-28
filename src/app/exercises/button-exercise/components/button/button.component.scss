@@ -34,6 +34,32 @@ $color-outline-text: $color-secondary;
   background-color: $color-primary-active;
 }
 
+:host.secondary {
+  background-color: $color-secondary;
+}
+:host.secondary:hover:not(:disabled),
+:host.secondary:focus:not(:disabled),
+:host.secondary:focus-visible:not(:disabled) {
+  background-color: $color-secondary-hover;
+}
+:host.secondary:active:not(:disabled) {
+  background-color: $color-secondary-active;
+}
+
+:host.outline {
+  background-color: $color-white;
+  color: $color-outline-text;
+  border: 2px solid $color-outline;
+}
+:host.outline:hover:not(:disabled),
+:host.outline:focus:not(:disabled),
+:host.outline:focus-visible:not(:disabled) {
+  border-color: $color-primary-hover;
+}
+:host.outline:active:not(:disabled) {
+  border-color: $color-primary-active;
+}
+
 :host:disabled {
   background-color: $background-color-disabled;
   color: $color-disabled;

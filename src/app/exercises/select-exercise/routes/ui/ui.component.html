@@ -1,6 +1,18 @@
 <div class="ui-container">
   <app-select
-    label="Demo Select"
+    label="first"
     [options]="options"
+    (selectedOption)="onOptionSelected($event)"
+  />
+  <app-select
+    label="second"
+    [options]="options"
+    (selectedOption)="onOptionSelected($event)"
+  />
+  <app-select
+    label="third"
+    id="third"
+    [options]="options"
+    (selectedOption)="onOptionSelected($event)"
   />
 </div>

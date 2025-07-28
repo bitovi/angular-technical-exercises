@@ -9,12 +9,6 @@
       </p>
 
       <button #button app-button (click)="openModal()">Open Modal</button>
-      @if (open) {
-        <app-modal
-          (closeRequested)="closeModal()"
-          [anchor]="buttonRef.nativeElement"
-        />
-      }
     </div>
     <div class="section section-2">
       <p>

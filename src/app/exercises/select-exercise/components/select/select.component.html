@@ -1,5 +1,5 @@
-<label>{{ label }}<ng-content /></label>
-<select id="app-select">
+<label [attr.for]="resolvedId">{{ label }}<ng-content /></label>
+<select [id]="resolvedId">
   @for (option of options; track option) {
     <option [value]="option.value">{{ option.text }}</option>
   }

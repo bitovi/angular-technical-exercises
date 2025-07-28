@@ -1,8 +1,16 @@
 <label>
   <input
     type="checkbox"
+    [checked]="checked"
+    [disabled]="disabled"
     (change)="onCheckboxChange($event)"
   />
+
+  <div class="checkbox-box">
+    @if (checked) {
+      <app-checkbox-icon />
+    }
+  </div>
 
   {{ label }}
   <ng-content></ng-content>

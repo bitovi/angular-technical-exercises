@@ -11,20 +11,24 @@ import { ButtonComponent } from '../../../button-exercise/components/button/butt
 })
 export class DemoComponent {
   meats = [
-    'Pepperoni',
-    'Sausage',
-    'Bacon',
-    'Chicken (Out of Stock)',
-    'Ham',
-  ]
-
-  vegetables = [
-    'Mushrooms',
-    'Onions',
-    'Bell peppers (Out of Stock)',
-    'Black olives',
-    'Pineapple',
-    'Jalapenos',
-    'Onions',
+    { text: 'Pepperoni', checked: true },
+    { text: 'Sausage' },
+    { text: 'Bacon' },
+    { text: 'Chicken (Out of Stock)', disabled: true },
+    { text: 'Ham' },
   ];
+
+  vegetables: { text: string; checked?: boolean; disabled?: boolean }[] = [
+    { text: 'Mushrooms' },
+    { text: 'Onions' },
+    { text: 'Bell peppers (Out of Stock)', disabled: true },
+    { text: 'Black olives' },
+    { text: 'Pineapple' },
+    { text: 'Jalapenos' },
+    { text: 'Onions' },
+  ];
+
+  toggleCheckbox(element: { checked?: boolean }): void {
+    element.checked = !element.checked;
+  }
 }

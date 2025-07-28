@@ -32,4 +32,8 @@ export class DemoComponent {
     { value: 'civic', text: 'Civic' },
     { value: 'mustang', text: 'Mustang' },
   ];
+
+  onOptionSelected(option: Option): void {
+    console.log('Selected option:', option);
+  }
 }

@@ -14,7 +14,7 @@ import { ButtonComponent } from '../../../button-exercise/components/button/butt
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss'],
   standalone: true,
-  imports: [ButtonComponent, ModalComponent],
+  imports: [ButtonComponent],
 })
 export class MainContentComponent {
   @ViewChild('button', { read: ElementRef })
@@ -22,8 +22,16 @@ export class MainContentComponent {
 
   open = false;
 
+  private readonly modalService = inject(ModalService);
+
   openModal() {
     this.open = true;
+    const modal = this.modalService.appendModal(ModalComponent, [
+      inputBinding('anchor', () => this.buttonRef.nativeElement),
+      inputBinding('onClose', () => () => {
+        this.modalService.removeComponentRef(modal);
+      }),
+    ]);
   }
 
   closeModal() {

@@ -1,4 +1,4 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
@@ -8,9 +8,20 @@ import { Component, HostBinding } from '@angular/core';
   standalone: true,
 })
 export class ButtonComponent {
+  @Input() appearance: 'primary' | 'secondary' | 'outline' = 'primary';
+
   @HostBinding('class.primary')
-  // eslint-disable-next-line @typescript-eslint/class-literal-property-style
   get isPrimary() {
-    return true;
+    return !this.appearance || this.appearance === 'primary';
+  }
+
+  @HostBinding('class.secondary')
+  get isSecondary() {
+    return this.appearance === 'secondary';
+  }
+
+  @HostBinding('class.outline')
+  get isOutline() {
+    return this.appearance === 'outline';
   }
 }
