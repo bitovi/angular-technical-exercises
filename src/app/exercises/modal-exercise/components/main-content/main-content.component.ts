@@ -20,12 +20,9 @@ export class MainContentComponent {
   @ViewChild('button', { read: ElementRef })
   buttonRef!: ElementRef<HTMLButtonElement>;
 
-  open = false;
-
   private readonly modalService = inject(ModalService);
 
   openModal() {
-    this.open = true;
     const modal = this.modalService.appendModal(ModalComponent, [
       inputBinding('anchor', () => this.buttonRef.nativeElement),
       inputBinding('onClose', () => () => {
