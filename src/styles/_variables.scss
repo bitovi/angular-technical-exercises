@@ -1,48 +1,53 @@
-// Base Colors
+@mixin tokens {
+  // Primary color variables (blue)
+  --color-primary: #1e90ff;
+  --color-primary-hover: #1c86ee;
+  --color-primary-active: #1874cd;
+
+  // Secondary color variables (grey)
+  --color-secondary: #6c757d;
+  --color-secondary-hover: #5a6268;
+  --color-secondary-active: #545b62;
+
+  // Outline color variables (grey)
+  --color-outline: #b0b0b0;
+  --color-outline-hover: #c8c8c8;
+  --color-outline-active: #e0e0e0;
+
+  // Disabled color variables (grey)
+  --background-color-disabled: #d1d5db;
+  --color-disabled: #6b7280;
+
+  // Black and white
+  --color-white: #ffffff;
+  --color-dark: #121212;
+
+  // Accessibility color for outline
+  --color-focus-ring: #ffd700;
+}
+
+// Primary color variables (blue)
 $color-primary: var(--color-primary);
 $color-primary-hover: var(--color-primary-hover);
 $color-primary-active: var(--color-primary-active);
 
+// Secondary color variables (grey)
 $color-secondary: var(--color-secondary);
 $color-secondary-hover: var(--color-secondary-hover);
 $color-secondary-active: var(--color-secondary-active);
 
+// Outline color variables (grey)
 $color-outline: var(--color-outline);
 $color-outline-hover: var(--color-outline-hover);
 $color-outline-active: var(--color-outline-active);
 
+// Disabled color variables (grey)
 $background-color-disabled: var(--background-color-disabled);
 $color-disabled: var(--color-disabled);
 
+// Black and white
 $color-white: var(--color-white);
 $color-dark: var(--color-dark);
 
+// Accessibility color for outline
 $color-focus-ring: var(--color-focus-ring);
-
-// Button Text
-// $color-button-text: var(--color-button-text);
-// $color-outline-text: var(--color-outline-text);
-
-// Select
-$color-select-background: var(--color-select-background);
-$color-select-hover: var(--color-select-hover);
-$color-select-active: var(--color-select-active);
-$color-select-border-focus: var(--color-select-border-focus);
-$color-select-arrow: var(--color-select-arrow);
-
-// Checkbox
-$color-checkbox-border: var(--color-checkbox-border);
-$color-checkbox-hover: var(--color-checkbox-hover);
-$color-checkbox-active-bg: var(--color-checkbox-active-bg);
-$color-checkbox-check: var(--color-checkbox-check);
-
-// Modal
-$color-modal-bg: var(--color-modal-bg);
-$color-modal-header: var(--color-modal-header);
-$color-modal-text: var(--color-modal-text);
-$color-modal-border: var(--color-modal-border);
-$color-modal-shadow: var(--color-modal-shadow);
-
-// Spacing
-$component-size: var(--component-size);
-$gap: var(--gap);

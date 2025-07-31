@@ -1,10 +1,19 @@
 @use "variables" as *;
 
+$background-color: $color-white;
+$border-color: #1f2937;
+
+$background-color-checked: $color-primary;
+$border-color-checked: $color-primary-active;
+
+$background-color-disabled: $background-color-disabled;
+$border-color-disabled: $background-color-disabled;
+
 :host {
   display: block;
   cursor: pointer;
   width: fit-content;
-  margin-bottom: $gap;
+  margin-bottom: 4px;
 }
 
 :host.disabled {
@@ -16,7 +25,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: $component-size;
+  line-height: 24px;
   cursor: inherit;
 }
 
@@ -34,12 +43,12 @@ input[type="checkbox"] {
   align-items: center;
   justify-content: center;
 
-  width: $component-size;
-  height: $component-size;
+  width: 24px;
+  height: 24px;
   border: 2px solid #1f2937;
   border-radius: 4px;
-  margin-right: $gap;
-  background-color: white;
+  margin-right: 4px;
+  $background-color: white;
 }
 
 :not(:disabled):hover + .checkbox-box,
@@ -49,8 +58,8 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + .checkbox-box {
-  background-color: $color-primary;
-  border-color: $color-primary-active;
+  background-color: $background-color-checked;
+  border-color: $border-color-checked;
 }
 
 /* Disabled */

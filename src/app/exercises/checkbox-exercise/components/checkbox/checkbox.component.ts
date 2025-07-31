@@ -28,7 +28,8 @@ export class CheckboxComponent {
   onCheckboxChange(event: Event): void {
     event.preventDefault();
     this.checkedChange.emit(!this.checked);
-    // Prevents the checkbox from toggling so that we can control the state manually
+    // Prevents the checkbox from toggling so that we can control the state
+    // manually
     (event.target as HTMLInputElement).checked = !!this.checked;
     return;
   }
