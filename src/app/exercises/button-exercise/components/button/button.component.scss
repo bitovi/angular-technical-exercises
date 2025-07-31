@@ -1,6 +1,20 @@
 @use "variables" as *;
 
-$color-button-text: $color-white;
+$background-color-primary: $color-primary;
+$background-color-primary-hover: $color-primary-hover;
+$background-color-primary-active: $color-primary-active;
+$text-color-primary: $color-white;
+
+$background-color-secondary: $color-secondary;
+$background-color-secondary-hover: $color-secondary-hover;
+$background-color-secondary-active: $color-secondary-active;
+$text-color-secondary: $color-white;
+
+$background-color-outline: $color-white;
+$border-color-outline: $color-outline;
+$border-color-outline-hover: $color-outline-hover;
+$border-color-outline-active: $color-outline-active;
+$border-width-outline: 2px;
 $color-outline-text: $color-secondary;
 
 :host {
@@ -14,24 +28,25 @@ $color-outline-text: $color-secondary;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  color: $color-button-text;
   max-height: 27px;
 }
+
 :host:focus-visible {
   outline: 2px solid $color-focus-ring;
   outline-offset: 2px;
 }
 
 :host.primary {
-  background-color: $color-primary;
+  color: $text-color-primary;
+  background-color: $background-color-primary;
 }
 :host.primary:hover:not(:disabled),
 :host.primary:focus:not(:disabled),
 :host.primary:focus-visible:not(:disabled) {
-  background-color: $color-primary-hover;
+  background-color: $background-color-primary-hover;
 }
 :host.primary:active:not(:disabled) {
-  background-color: $color-primary-active;
+  background-color: $background-color-primary-active;
 }
 
 :host:disabled {

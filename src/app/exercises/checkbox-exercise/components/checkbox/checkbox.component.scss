@@ -1,10 +1,19 @@
 @use "variables" as *;
 
+$background-color: $color-white;
+$border-color: #1f2937;
+
+$background-color-checked: $color-primary;
+$border-color-checked: $color-primary-active;
+
+$background-color: $background-color-disabled;
+$border-color: $background-color-disabled;
+
 :host {
   display: block;
   cursor: pointer;
   width: fit-content;
-  margin-bottom: $gap;
+  margin-bottom: 4px;
 }
 
 :host.disabled {

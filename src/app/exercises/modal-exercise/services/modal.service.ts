@@ -18,6 +18,18 @@ const MODAL_LAYER_ID = 'modals';
 export class ModalService {
   private readonly applicationRef = inject(ApplicationRef);
 
+  /**
+   * Dynamically append component to the modal layer in the body.
+   *
+   * ```ts
+   * import { inputBinding } from '@angular/core';
+   *
+   * this.modalService.appendModal(MyComponentClass, [
+   *   inputBinding('input-bind-1', () => SOME_VALUE),
+   *   inputBinding('input-bind-2', () => SOME_FUNCTION),
+   * ]);
+   * ```
+   */
   appendModal<T>(component: Type<T>, bindings?: Binding[]): ComponentRef<T> {
     const modalLayer = this.ensureModalLayer();
 

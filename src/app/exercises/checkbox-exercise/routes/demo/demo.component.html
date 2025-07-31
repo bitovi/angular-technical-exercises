@@ -2,16 +2,12 @@
 <p>Meats</p>
 
 @for (meat of meats; track meat) {
-  <app-checkbox
-    [label]="meat"
-  ></app-checkbox>
+  <app-checkbox [label]="meat"></app-checkbox>
 }
 
 <p>Vegetables</p>
 @for (vegetable of vegetables; track vegetable) {
-  <app-checkbox
-    [label]="vegetable"
-  ></app-checkbox>
+  <app-checkbox [label]="vegetable"></app-checkbox>
 }
 
 <div class="buttons">

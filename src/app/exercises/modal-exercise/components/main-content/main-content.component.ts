@@ -1,12 +1,5 @@
-import {
-  Component,
-  ElementRef,
-  inject,
-  inputBinding,
-  ViewChild,
-} from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ModalComponent } from '../modal/modal.component';
-import { ModalService } from '../../services/modal.service';
 import { ButtonComponent } from '../../../button-exercise/components/button/button.component';
 
 @Component({
