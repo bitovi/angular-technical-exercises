@@ -1,3 +1,7 @@
+/*
+ * This file does not need any updates.
+ */
+
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ModalComponent } from '../../components/modal/modal.component';
 import { ButtonComponent } from '../../../button-exercise/components/button/button.component';
