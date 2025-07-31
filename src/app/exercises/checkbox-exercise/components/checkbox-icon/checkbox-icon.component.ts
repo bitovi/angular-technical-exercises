@@ -1,3 +1,7 @@
+/*
+ * This file does not need any updates.
+ */
+
 import { Component } from '@angular/core';
 
 @Component({

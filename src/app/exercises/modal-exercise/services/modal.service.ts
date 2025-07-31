@@ -1,3 +1,7 @@
+/*
+ * This file does not need any updates.
+ */
+
 // source: https://netbasal.com/getting-to-know-the-createcomponent-api-in-angular-22fb115f08e2
 
 import {
