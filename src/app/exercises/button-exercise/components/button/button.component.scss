@@ -76,20 +76,6 @@ $text-color-outline: $color-secondary;
   border-color: $border-color-outline-active;
 }
 
-// :host.outline {
-//   background-color: $color-white;
-//   color: $color-outline-text;
-//   border: 2px solid $color-outline;
-// }
-// :host.outline:hover:not(:disabled),
-// :host.outline:focus:not(:disabled),
-// :host.outline:focus-visible:not(:disabled) {
-//   border-color: $color-primary-hover;
-// }
-// :host.outline:active:not(:disabled) {
-//   border-color: $color-primary-active;
-// }
-
 :host:disabled {
   background-color: $background-color-disabled;
   color: $color-disabled;
