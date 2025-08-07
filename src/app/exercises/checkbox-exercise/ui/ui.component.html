@@ -2,26 +2,26 @@
   <app-checkbox
     label="Option 1"
     [checked]="true"
-    (checkedChange)="onCheckboxChange($event)"
+    (checkboxIsToggled)="onCheckboxChange($event)"
   ></app-checkbox>
 
   <app-checkbox
     label="Option 2"
     [checked]="false"
-    (checkedChange)="onCheckboxChange($event)"
+    (checkboxIsToggled)="onCheckboxChange($event)"
   ></app-checkbox>
 
   <app-checkbox
     label="Option 3"
     [checked]="true"
     [disabled]="true"
-    (checkedChange)="onCheckboxChange($event)"
+    (checkboxIsToggled)="onCheckboxChange($event)"
   ></app-checkbox>
 
   <app-checkbox
     label="Option 4"
     [disabled]="true"
-    (checkedChange)="onCheckboxChange($event)"
+    (checkboxIsToggled)="onCheckboxChange($event)"
   ></app-checkbox>
 </div>
 

@@ -23,11 +23,14 @@ export class CheckboxComponent {
   @Input()
   disabled?: boolean = false;
 
-  @Output() checkedChange: EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Output() checkboxIsToggled: EventEmitter<boolean> = new EventEmitter<boolean>();
 
+  /**
+   * No code changes are needed for this method.
+   */
   onCheckboxChange(event: Event): void {
     event.preventDefault();
-    this.checkedChange.emit(!this.checked);
+    this.checkboxIsToggled.emit(!this.checked);
     // Prevents the checkbox from toggling so that we can control the state
     // manually
     (event.target as HTMLInputElement).checked = !!this.checked;

@@ -6,7 +6,7 @@
     [label]="meat.text"
     [checked]="meat.checked"
     [disabled]="meat.disabled"
-    (checkedChange)="toggleCheckbox(meat)"
+    (checkboxIsToggled)="toggleCheckbox(meat)"
   ></app-checkbox>
 }
 
@@ -16,7 +16,7 @@
     [label]="vegetable.text"
     [checked]="vegetable.checked"
     [disabled]="vegetable.disabled"
-    (checkedChange)="toggleCheckbox(vegetable)"
+    (checkboxIsToggled)="toggleCheckbox(vegetable)"
   ></app-checkbox>
 }
 
