@@ -1,15 +1,23 @@
 @use "variables" as *;
 
+// Be sure to understand how src/styles/_variables.scss works before editing
+// this file.
+
+// SCSS variables needed to style buttons
+
+// Primary button background color changes depending on state
 $background-color-primary: $color-primary;
 $background-color-primary-hover: $color-primary-hover;
 $background-color-primary-active: $color-primary-active;
 $text-color-primary: $color-white;
 
+// Secondary button background color changes depending on state
 $background-color-secondary: $color-secondary;
 $background-color-secondary-hover: $color-secondary-hover;
 $background-color-secondary-active: $color-secondary-active;
 $text-color-secondary: $color-white;
 
+// Outline button border color changes depending on state
 $background-color-outline: $color-white;
 $border-color-outline: $color-outline;
 $border-color-outline-hover: $color-outline-hover;
@@ -48,6 +56,10 @@ $text-color-outline: $color-secondary;
 :host.primary:active:not(:disabled) {
   background-color: $background-color-primary-active;
 }
+
+// TODO add styles for secondary button
+
+// TODO add styles for outline buttons
 
 :host:disabled {
   background-color: $background-color-disabled;

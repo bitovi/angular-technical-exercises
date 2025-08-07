@@ -16,6 +16,8 @@ Finding a solution is more important that providing the "most correct" solution.
 Once a solution is found, please provide considerations for improvements
 verbally.
 
+> Although you can use whatever API you want for your solutions, it is suggested to stay away from the Signals API as the expected solutions are harder to implement using them.
+
 # Important Directories:
 
 All exercises are found in `src/app/exercises`. Follow the prompts and solve the
