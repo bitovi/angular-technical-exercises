@@ -9,7 +9,7 @@ export const routes: Routes = [
   {
     path: 'button-exercise',
     loadComponent: () =>
-      import('./exercises/button-exercise/button-exercise.component').then(
+      import('./_/button-exercise/button-exercise.component').then(
         (m) => m.ButtonExerciseComponent,
       ),
     children: [
@@ -17,14 +17,14 @@ export const routes: Routes = [
       {
         path: 'ui',
         loadComponent: () =>
-          import('./exercises/button-exercise/routes/ui/ui.component').then(
+          import('./exercises/button-exercise/ui/ui.component').then(
             (m) => m.UiComponent,
           ),
       },
       {
         path: 'demo',
         loadComponent: () =>
-          import('./exercises/button-exercise/routes/demo/demo.component').then(
+          import('./exercises/button-exercise/demo/demo.component').then(
             (m) => m.DemoComponent,
           ),
       },
@@ -33,7 +33,7 @@ export const routes: Routes = [
   {
     path: 'select-exercise',
     loadComponent: () =>
-      import('./exercises/select-exercise/select-exercise.component').then(
+      import('./_/select-exercise/select-exercise.component').then(
         (m) => m.SelectExerciseComponent,
       ),
     children: [
@@ -41,14 +41,14 @@ export const routes: Routes = [
       {
         path: 'ui',
         loadComponent: () =>
-          import('./exercises/select-exercise/routes/ui/ui.component').then(
+          import('./exercises/select-exercise/ui/ui.component').then(
             (m) => m.UiComponent,
           ),
       },
       {
         path: 'demo',
         loadComponent: () =>
-          import('./exercises/select-exercise/routes/demo/demo.component').then(
+          import('./exercises/select-exercise/demo/demo.component').then(
             (m) => m.DemoComponent,
           ),
       },
@@ -57,7 +57,7 @@ export const routes: Routes = [
   {
     path: 'checkbox-exercise',
     loadComponent: () =>
-      import('./exercises/checkbox-exercise/checkbox-exercise.component').then(
+      import('./_/checkbox-exercise/checkbox-exercise.component').then(
         (m) => m.CheckboxExerciseComponent,
       ),
     children: [
@@ -65,7 +65,7 @@ export const routes: Routes = [
       {
         path: 'ui',
         loadComponent: () =>
-          import('./exercises/checkbox-exercise/routes/ui/ui.component').then(
+          import('./exercises/checkbox-exercise/ui/ui.component').then(
             (m) => m.UiComponent,
           ),
       },
@@ -73,7 +73,7 @@ export const routes: Routes = [
         path: 'demo',
         loadComponent: () =>
           import(
-            './exercises/checkbox-exercise/routes/demo/demo.component'
+            './exercises/checkbox-exercise/demo/demo.component'
           ).then((m) => m.DemoComponent),
       },
     ],
@@ -81,7 +81,7 @@ export const routes: Routes = [
   {
     path: 'modal-exercise',
     loadComponent: () =>
-      import('./exercises/modal-exercise/modal-exercise.component').then(
+      import('./_/modal-exercise/modal-exercise.component').then(
         (m) => m.ModalExerciseComponent,
       ),
     children: [
@@ -89,14 +89,14 @@ export const routes: Routes = [
       {
         path: 'ui',
         loadComponent: () =>
-          import('./exercises/modal-exercise/routes/ui/ui.component').then(
+          import('./exercises/modal-exercise/ui/ui.component').then(
             (m) => m.UiComponent,
           ),
       },
       {
         path: 'demo',
         loadComponent: () =>
-          import('./exercises/modal-exercise/routes/demo/demo.component').then(
+          import('./exercises/modal-exercise/demo/demo.component').then(
             (m) => m.DemoComponent,
           ),
       },

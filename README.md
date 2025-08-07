@@ -6,7 +6,7 @@ candidates structure reusable components.
 The core skill sets to showcase:
 
 1. Maintaining backwards compatibility.
-2. Providing a good developer exercise and "escape hatches" to keep development unblocked.
+2. Providing a good developer experience and "escape hatches" to keep development unblocked.
 3. Accessibility and Angular best practices.
 
 # The Exercises
@@ -22,3 +22,5 @@ technical tasks as provided verbally.
 
 1. `src/app/exercises` - all exercises
 2. `src/styles/_variables.scss` - style tokens for theme
+
+All the other files are not relevant to the exercises and should not be updated.
