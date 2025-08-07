@@ -22,3 +22,5 @@ technical tasks as provided verbally.
 
 1. `src/app/exercises` - all exercises
 2. `src/styles/_variables.scss` - style tokens for theme
+
+All the other files are not relevant to the exercises and should not be updated.
