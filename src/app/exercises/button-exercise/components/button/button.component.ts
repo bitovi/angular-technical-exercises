@@ -1,7 +1,8 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
-  // eslint-disable-next-line @angular-eslint/component-selector
+  // https://angular.dev/best-practices/a11y#augmenting-native-elements
   selector: 'button[app-button]',
   templateUrl: './button.component.html',
   styleUrl: './button.component.scss',
