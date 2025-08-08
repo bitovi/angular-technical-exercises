@@ -4,24 +4,16 @@
 // Be sure to ask for any clarifications for any styles not already listed here.
 
 $background-color: $color-white;
-$border-color: #1f2937;
+$border-color: $color-secondary-active;
 
 $background-color-checked: $color-primary;
 $border-color-checked: $color-primary-active;
-
-$background-color-disabled: $background-color-disabled;
-$border-color-disabled: $background-color-disabled;
 
 :host {
   display: block;
   cursor: pointer;
   width: fit-content;
   margin-bottom: 4px;
-}
-
-:host.disabled {
-  color: $color-disabled;
-  cursor: not-allowed;
 }
 
 label {
@@ -54,8 +46,8 @@ input[type="checkbox"] {
   $background-color: $background-color;
 }
 
-:not(:disabled):hover + .checkbox-box,
-:not(:disabled):focus-visible + .checkbox-box {
+:hover + .checkbox-box,
+:focus-visible + .checkbox-box {
   outline: 2px solid $color-focus-ring;
   outline-offset: 2px;
 }
@@ -63,10 +55,4 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + .checkbox-box {
   background-color: $background-color-checked;
   border-color: $border-color-checked;
-}
-
-/* Disabled */
-input[type="checkbox"]:disabled + .checkbox-box {
-  background-color: $background-color-disabled;
-  border-color: $background-color-disabled;
 }

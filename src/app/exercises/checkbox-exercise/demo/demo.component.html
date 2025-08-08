@@ -5,7 +5,6 @@
   <app-checkbox
     [label]="meat.text"
     [checked]="meat.checked"
-    [disabled]="meat.disabled"
     (checkboxIsToggled)="toggleCheckbox(meat)"
   ></app-checkbox>
 }
@@ -15,7 +14,6 @@
   <app-checkbox
     [label]="vegetable.text"
     [checked]="vegetable.checked"
-    [disabled]="vegetable.disabled"
     (checkboxIsToggled)="toggleCheckbox(vegetable)"
   ></app-checkbox>
 }

@@ -1,26 +1,25 @@
 <div class="ui-container">
   <app-checkbox
-    label="Option 1"
+    label="Checked"
     [checked]="true"
     (checkboxIsToggled)="onCheckboxChange($event)"
   ></app-checkbox>
 
   <app-checkbox
-    label="Option 2"
+    label="Checked and Hover"
+    [checked]="true"
+    (checkboxIsToggled)="onCheckboxChange($event)"
+  ></app-checkbox>
+
+  <app-checkbox
+    label="Unchecked"
     [checked]="false"
     (checkboxIsToggled)="onCheckboxChange($event)"
   ></app-checkbox>
 
   <app-checkbox
-    label="Option 3"
-    [checked]="true"
-    [disabled]="true"
-    (checkboxIsToggled)="onCheckboxChange($event)"
-  ></app-checkbox>
-
-  <app-checkbox
-    label="Option 4"
-    [disabled]="true"
+    label="Unchecked and Hover"
+    [checked]="false"
     (checkboxIsToggled)="onCheckboxChange($event)"
   ></app-checkbox>
 </div>

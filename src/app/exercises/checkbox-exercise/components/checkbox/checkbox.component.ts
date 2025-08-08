@@ -1,7 +1,6 @@
 import {
   Component,
   EventEmitter,
-  HostBinding,
   Input,
   Output,
 } from '@angular/core';
@@ -18,10 +17,6 @@ export class CheckboxComponent {
   @Input() label = '';
 
   @Input() checked?: boolean = false;
-
-  @HostBinding('class.disabled')
-  @Input()
-  disabled?: boolean = false;
 
   @Output() checkboxIsToggled: EventEmitter<boolean> = new EventEmitter<boolean>();
 
