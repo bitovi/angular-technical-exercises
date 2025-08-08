@@ -13,10 +13,10 @@ export class DemoComponent {
   meats = [
     { text: 'Pepperoni', checked: true },
     { text: 'Sausage' },
-    { text: 'Chicken' }
+    { text: 'Chicken' },
   ];
 
-  vegetables: { text: string; checked?: boolean; }[] = [
+  vegetables: { text: string; checked?: boolean }[] = [
     { text: 'Bell peppers' },
     { text: 'Jalapenos' },
     { text: 'Onions' },

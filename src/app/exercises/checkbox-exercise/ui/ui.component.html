@@ -2,13 +2,13 @@
   <app-checkbox
     label="Checked"
     [checked]="true"
-    (checkboxIsToggled)="onCheckboxChange($event)"
+    (interactedWith)="onCheckboxInteracted($event)"
   ></app-checkbox>
 
   <app-checkbox
     label="Unchecked"
     [checked]="false"
-    (checkboxIsToggled)="onCheckboxChange($event)"
+    (interactedWith)="onCheckboxInteracted($event)"
   ></app-checkbox>
 </div>
 

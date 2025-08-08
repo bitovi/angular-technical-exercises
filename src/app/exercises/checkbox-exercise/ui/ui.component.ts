@@ -9,7 +9,7 @@ import { CheckboxComponent } from '../components/checkbox/checkbox.component';
   imports: [CheckboxComponent],
 })
 export class UiComponent {
-  onCheckboxChange(nextCheckedState: boolean): void {
-    console.log('Checkbox changed:', nextCheckedState);
+  onCheckboxInteracted(nextCheckedState: boolean): void {
+    console.log('Checkbox interacted -> next state:', nextCheckedState);
   }
 }

@@ -8,11 +8,15 @@ export const routes: Routes = [
   {
     path: 'ui',
     loadComponent: () =>
-      import('../../exercises/select-exercise/ui/ui.component').then((m) => m.UiComponent),
+      import('../../exercises/select-exercise/ui/ui.component').then(
+        (m) => m.UiComponent,
+      ),
   },
   {
     path: 'demo',
     loadComponent: () =>
-      import('../../exercises/select-exercise/demo/demo.component').then((m) => m.DemoComponent),
+      import('../../exercises/select-exercise/demo/demo.component').then(
+        (m) => m.DemoComponent,
+      ),
   },
 ];
