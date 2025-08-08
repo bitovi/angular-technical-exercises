@@ -1,29 +1,27 @@
-@use "variables" as *;
-
 // Be sure to understand how src/styles/_variables.scss works before editing
 // this file.
 
 // SCSS variables needed to style buttons
 
 // Primary button background color changes depending on state
-$background-color-primary: $color-primary;
-$background-color-primary-hover: $color-primary-hover;
-$background-color-primary-active: $color-primary-active;
-$text-color-primary: $color-white;
+$background-color-primary: var(--color-primary);
+$background-color-primary-hover: var(--color-primary-hover);
+$background-color-primary-active: var(--color-primary-active);
+$text-color-primary: var(--color-white);
 
 // Secondary button background color changes depending on state
-$background-color-secondary: $color-secondary;
-$background-color-secondary-hover: $color-secondary-hover;
-$background-color-secondary-active: $color-secondary-active;
-$text-color-secondary: $color-white;
+$background-color-secondary: var(--color-secondary);
+$background-color-secondary-hover: var(--color-secondary-hover);
+$background-color-secondary-active: var(--color-secondary-active);
+$text-color-secondary: var(--color-white);
 
 // Outline button border color changes depending on state
-$background-color-outline: $color-white;
-$border-color-outline: $color-outline;
-$border-color-outline-hover: $color-outline-hover;
-$border-color-outline-active: $color-outline-active;
+$background-color-outline: var(--color-white);
+$border-color-outline: var(--color-outline);
+$border-color-outline-hover: var(--color-outline-hover);
+$border-color-outline-active: var(--color-outline-active);
 $border-width-outline: 2px;
-$text-color-outline: $color-secondary;
+$text-color-outline: var(--color-secondary);
 
 :host {
   display: flex;
@@ -40,7 +38,7 @@ $text-color-outline: $color-secondary;
 }
 
 :host:focus-visible {
-  outline: 2px solid $color-focus-ring;
+  outline: 2px solid var(--color-focus-ring);
   outline-offset: 2px;
 }
 
@@ -85,8 +83,8 @@ $text-color-outline: $color-secondary;
 }
 
 :host:disabled {
-  background-color: $background-color-disabled;
-  color: $color-disabled;
+  background-color: var(--background-color-disabled);
+  color: var(--color-disabled);
   cursor: not-allowed;
   border: none;
 }

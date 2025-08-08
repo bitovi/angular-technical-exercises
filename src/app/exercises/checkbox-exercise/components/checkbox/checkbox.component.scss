@@ -1,13 +1,11 @@
-@use "variables" as *;
-
 // Checkbox style values
 // Be sure to ask for any clarifications for any styles not already listed here.
 
-$background-color: $color-white;
-$border-color: $color-secondary-active;
+$background-color: var(--color-white);
+$border-color: var(--color-secondary-active);
 
-$background-color-checked: $color-primary;
-$border-color-checked: $color-primary-active;
+$background-color-checked: var(--color-primary);
+$border-color-checked: var(--color-primary-active);
 
 :host {
   display: block;
@@ -48,7 +46,7 @@ input[type="checkbox"] {
 
 :hover + .checkbox-box,
 :focus-visible + .checkbox-box {
-  outline: 2px solid $color-focus-ring;
+  outline: 2px solid var(--color-focus-ring);
   outline-offset: 2px;
 }
 

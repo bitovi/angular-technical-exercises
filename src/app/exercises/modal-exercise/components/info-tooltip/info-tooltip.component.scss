@@ -2,8 +2,6 @@
  * This file does not need any updates.
  */
 
-@use "variables" as *;
-
 // Do not change this value, it must be the max possible value.
 $maxZIndex: 2147483647;
 
@@ -48,15 +46,25 @@ svg {
   button {
     margin-top: 16px;
     margin-left: auto;
+
+    &:focus-visible {
+      outline: 2px solid var(--color-focus-ring);
+      outline-offset: 2px;
+    }
   }
 }
 
 .info-tooltip-button {
-  // todo
   @include button-reset;
+
   display: inline-flex;
   align-items: center;
   gap: 4px;
   text-decoration: underline;
-  color: $color-primary;
+  color: var(--color-primary);
+
+  &:focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 2px;
+  }
 }
