@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
-  gap: 4px;
   border: 2px;
 }
 
@@ -30,4 +29,5 @@ select:focus-visible {
 }
 label {
   cursor: pointer;
+  padding-bottom: 4px;
 }
