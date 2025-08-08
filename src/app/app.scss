@@ -2,15 +2,13 @@
  * This file does not need any updates.
  */
 
-@use "variables" as *;
-
 .navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: $color-secondary;
+  background-color: var(--color-secondary);
   padding: 12px 24px;
-  color: $color-white;
+  color: var(--color-white);
 }
 .navbar ul {
   list-style: none;
@@ -20,18 +18,24 @@
   padding: 0;
 }
 .navbar ul li a {
-  color: $color-white;
+  color: var(--color-white);
   text-decoration: none;
   font-weight: 500;
-}
-.navbar ul li a:hover {
-  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 2px;
+  }
 }
 
 .main-content {
   max-width: 600px;
   margin: 32px auto;
   padding: 16px;
-  border: 2px solid $color-secondary;
+  border: 2px solid var(--color-secondary);
   border-radius: 8px;
 }

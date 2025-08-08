@@ -1,16 +1,14 @@
-@use "variables" as *;
-
 // Checkbox style values
 // Be sure to ask for any clarifications for any styles not already listed here.
 
-$background-color: $color-white;
+$background-color: var(--color-white);
 $border-color: #1f2937;
 
-$background-color-checked: $color-primary;
-$border-color-checked: $color-primary-active;
+$background-color-checked: var(--color-primary);
+$border-color-checked: var(--color-primary-active);
 
-$background-color-disabled: $background-color-disabled;
-$border-color-disabled: $background-color-disabled;
+$background-color-disabled: var(--background-color-disabled);
+$border-color-disabled: var(--background-color-disabled);
 
 :host {
   display: block;
@@ -20,6 +18,6 @@ $border-color-disabled: $background-color-disabled;
 }
 
 :host.disabled {
-  color: $color-disabled;
+  color: var(--color-disabled);
   cursor: not-allowed;
 }

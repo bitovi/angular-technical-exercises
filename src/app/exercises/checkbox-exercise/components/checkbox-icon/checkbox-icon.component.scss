@@ -1,11 +1,10 @@
 /*
  * This file does not need any updates.
  */
-@use "variables" as *;
 
 :host {
   display: block;
   height: 100%;
   width: 100%;
-  color: $color-white;
+  color: var(--color-white);
 }
