@@ -72,9 +72,9 @@ export const routes: Routes = [
       {
         path: 'demo',
         loadComponent: () =>
-          import(
-            './exercises/checkbox-exercise/demo/demo.component'
-          ).then((m) => m.DemoComponent),
+          import('./exercises/checkbox-exercise/demo/demo.component').then(
+            (m) => m.DemoComponent,
+          ),
       },
     ],
   },

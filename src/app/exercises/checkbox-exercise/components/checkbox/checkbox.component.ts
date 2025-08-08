@@ -15,14 +15,18 @@ export class CheckboxComponent {
 
   @Input() checked?: boolean = false;
 
-  @Output() checkboxIsToggled: EventEmitter<boolean> = new EventEmitter<boolean>();
+  /**
+   * Emits the next checked state if checkbox were to be toggled.
+   * This is used to control the checkbox state from the parent component.
+   */
+  @Output() interactedWith: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   /**
    * No code changes are needed for this method.
    */
   onCheckboxChange(event: Event): void {
     event.preventDefault();
-    this.checkboxIsToggled.emit(!this.checked);
+    this.interactedWith.emit(!this.checked);
     // Prevents the checkbox from toggling so that we can control the state
     // manually
     (event.target as HTMLInputElement).checked = !!this.checked;

@@ -12,16 +12,16 @@ import { Component, HostBinding } from '@angular/core';
 export class ButtonComponent {
   @HostBinding('class.primary')
   get isPrimary() {
-    return true;// Hardcoded as true for now, please update as needed
+    return true; // Hardcoded as true for now, please update as needed
   }
 
   @HostBinding('class.secondary')
   get isSecondary() {
-    return false;// Hardcoded as false for now, please update as needed
+    return false; // Hardcoded as false for now, please update as needed
   }
 
   @HostBinding('class.outline')
   get isOutline() {
-    return false;// Hardcoded as false for now, please update as needed
+    return false; // Hardcoded as false for now, please update as needed
   }
 }

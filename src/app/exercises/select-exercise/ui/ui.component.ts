@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import {
-  Option,
-  SelectComponent,
-} from '../components/select/select.component';
+import { Option, SelectComponent } from '../components/select/select.component';
 
 @Component({
   selector: 'app-ui-select-exercise',

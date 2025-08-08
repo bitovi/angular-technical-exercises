@@ -1,13 +1,13 @@
 <div class="ui-container">
   <app-checkbox
     label="Option 1"
-    (checkboxIsToggled)="onCheckboxChange($event)"
+    (interactedWith)="onCheckboxInteracted($event)"
   ></app-checkbox>
 
   <app-checkbox
     label="Option 2"
     [checked]="true"
-    (checkboxIsToggled)="onCheckboxChange($event)"
+    (interactedWith)="onCheckboxInteracted($event)"
   ></app-checkbox>
 </div>
 

@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import {
-  Option,
-  SelectComponent,
-} from '../components/select/select.component';
+import { Option, SelectComponent } from '../components/select/select.component';
 import { ButtonComponent } from '../../button-exercise/components/button/button.component';
 
 @Component({
